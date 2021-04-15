@@ -1,6 +1,6 @@
 import React from "react";
 
-function Jobs({
+const Jobs = ({
   title,
   job,
   latest,
@@ -14,21 +14,21 @@ function Jobs({
   skillThree,
   skillFour,
   skillFive,
-}) {
+}) => {
   return (
-    <div className="max-w-screen-lg border-l-4 rounded border-primary m-auto  p-8 shadow bg-white">
+    <div className="max-w-screen-lg border-l-4 rounded border-primary m-auto  p-8 shadow bg-white mb-4">
       <div className="flex  gap-x-4">
         <div className="flex gap-x-4 mr-auto items-center">
           <img src={img} alt="" />
           <div className="text-sm flex flex-col">
             <div className="flex py-1 gap-x-4 items-center">
               <p className="text-primary font-bold">{title}</p>
-              <button className="text-xs rounded-full bg-primary text-white px-3 py-2 uppercase font-bold">
+              <div className="text-xs rounded-full bg-primary text-white px-3 py-2 uppercase font-bold">
                 {latest}
-              </button>
-              <button className="text-xs rounded-full bg-v-dark-cyan text-white px-3 py-2 uppercase">
+              </div>
+              <div className="text-xs rounded-full bg-v-dark-cyan text-white px-3 py-2 uppercase">
                 {featured}
-              </button>
+              </div>
             </div>
             <div className="py-1">
               <h2 className="font-bold text-lg">{job}</h2>
@@ -65,6 +65,6 @@ function Jobs({
       </div>
     </div>
   );
-}
+};
 
 export default Jobs;
