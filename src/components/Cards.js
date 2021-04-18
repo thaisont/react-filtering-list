@@ -15,6 +15,8 @@ function Cards() {
   return (
     <div>
       <Job
+        border-l-4
+        border-primary
         title="Photosnap"
         job="Senior Fullstack developer"
         latest="new!"
@@ -23,7 +25,7 @@ function Cards() {
         day="1d ago"
         duration="Full time"
         location="USA only"
-        skillOne="Front end"
+        frontend="Front end"
         skillTwo="Senior"
         skillThree="HTML"
         skillFour="CSS"

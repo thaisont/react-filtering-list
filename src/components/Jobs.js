@@ -2,21 +2,21 @@ import React from "react";
 
 const Jobs = ({
   title,
-  job,
+  role,
   latest,
   featured,
   img,
   day,
   duration,
   location,
-  skillOne,
+  frontend,
   skillTwo,
   skillThree,
   skillFour,
   skillFive,
 }) => {
   return (
-    <div className="max-w-screen-lg border-l-4 rounded border-primary m-auto  p-8 shadow bg-white mb-4">
+    <div className="max-w-screen-lg rounded  m-auto  p-8 shadow bg-white mb-4">
       <div className="flex  gap-x-4">
         <div className="flex gap-x-4 mr-auto items-center">
           <img src={img} alt="" />
@@ -31,7 +31,7 @@ const Jobs = ({
               </div>
             </div>
             <div className="py-1">
-              <h2 className="font-bold text-lg">{job}</h2>
+              <h2 className="font-bold text-lg">{role}</h2>
             </div>
             <div className="flex py-1 gap-x-8 text-dark-cyan">
               <p>{day}</p>
@@ -43,7 +43,13 @@ const Jobs = ({
           </div>
         </div>
         <div className="flex items-center gap-x-4">
-          <p className="p-1.5 text-primary bg-light-cyan font-bold">
+          <div
+            className="p-1.5 text-primary bg-light-cyan font-bold"
+            data-role="frontend"
+          >
+            {frontend}
+          </div>
+          {/* <p className="p-1.5 text-primary bg-light-cyan font-bold">
             {skillOne}
           </p>
           <p className="p-1.5 text-primary bg-light-cyan font-bold">
@@ -60,7 +66,7 @@ const Jobs = ({
           </p>
           <p className="p-1.5 text-primary bg-light-cyan font-bold">
             {skillFive}
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
