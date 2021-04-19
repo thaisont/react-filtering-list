@@ -18,20 +18,15 @@ function Cards() {
         border-l-4
         border-primary
         title="Photosnap"
-        job="Senior Fullstack developer"
+        job="Senior Fullstack
+        developer"
         latest="new!"
         featured="featured"
         img={photo}
         day="1d ago"
         duration="Full time"
         location="USA only"
-        frontend="Front end"
-        skillTwo="Senior"
-        skillThree="HTML"
-        skillFour="CSS"
-        skillFive="Javascript"
-      />
-
+      />{" "}
       <Job
         title="Manage"
         job="Fullstack developer"
@@ -41,12 +36,10 @@ function Cards() {
         day="1d ago"
         duration="Full time"
         location="UK only"
-        skillTwo="Full stack"
-        skillThree="Mid weight"
-        skillFour="Python"
-        skillFive="React"
+        fullstack="Full stack"
+        frontend
+        className="hidden"
       />
-
       <Job
         title="Account"
         job="Junior Front Developer"
@@ -61,7 +54,6 @@ function Cards() {
         skillFour="Sass"
         skillFive="Javascript"
       />
-
       <Job
         title="MyHome"
         job="Junior Front Developer"
@@ -74,7 +66,6 @@ function Cards() {
         skillFour="CSS"
         skillFive="Javascript"
       />
-
       <Job
         title="Loop Studios"
         job="Software Engineer"
@@ -88,7 +79,6 @@ function Cards() {
         skillFour="Sass"
         skillFive="Ruby"
       />
-
       <Job
         title="FaceIt"
         job="Junior Backend Developer"
@@ -101,7 +91,6 @@ function Cards() {
         skillFour="Ruby"
         skillFive="RoR"
       />
-
       <Job
         title="Shortly"
         job="Junior Developer"
@@ -115,7 +104,6 @@ function Cards() {
         skillFour="Sass"
         skillFive="Javascript"
       />
-
       <Job
         title="Insure"
         job="Junior Front Developer"
@@ -129,7 +117,6 @@ function Cards() {
         skillFour="Javascript"
         skillFive="Sass"
       />
-
       <Job
         title="Eyecam Co."
         job="Full Stack Engineer"
@@ -143,7 +130,6 @@ function Cards() {
         skillFour="Django"
         skillFive="Python"
       />
-
       <Job
         title="The Air Filter Company"
         job="Front-end Dev"

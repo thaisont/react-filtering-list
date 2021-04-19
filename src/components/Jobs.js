@@ -9,11 +9,6 @@ const Jobs = ({
   day,
   duration,
   location,
-  frontend,
-  skillTwo,
-  skillThree,
-  skillFour,
-  skillFive,
 }) => {
   return (
     <div className="max-w-screen-lg rounded  m-auto  p-8 shadow bg-white mb-4">
@@ -43,12 +38,12 @@ const Jobs = ({
           </div>
         </div>
         <div className="flex items-center gap-x-4">
-          <div
+          <button
             className="p-1.5 text-primary bg-light-cyan font-bold"
             data-role="frontend"
           >
-            {frontend}
-          </div>
+            front end
+          </button>
           {/* <p className="p-1.5 text-primary bg-light-cyan font-bold">
             {skillOne}
           </p>
