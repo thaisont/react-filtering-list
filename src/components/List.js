@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
-import data from "./data.json";
-import JobBoard from "./components/JobBoard";
 
-function App() {
+import data from "../data.json";
+import JobBoard from "./JobBoard";
+
+console.log(data);
+
+function List() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
@@ -14,8 +16,7 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <JobBoard />
+      <h1>Hello</h1>
       {jobs.length === 0 ? (
         <p>Jobs are fetching...</p>
       ) : (
@@ -25,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default List;

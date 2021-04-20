@@ -27,7 +27,7 @@ function Cards() {
         duration="Full time"
         location="USA only"
       />{" "}
-      <Job
+      {/* <Job
         title="Manage"
         job="Fullstack developer"
         latest="new!"
@@ -142,7 +142,7 @@ function Cards() {
         skillThree="React"
         skillFour="Sass"
         skillFive="Javascript"
-      />
+      /> */}
     </div>
   );
 }
