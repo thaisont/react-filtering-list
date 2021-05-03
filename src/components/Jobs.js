@@ -48,9 +48,21 @@ const Jobs = ({
           </div>
         </div>
         <div className="flex items-center gap-x-4">
-          {languages.map((language) => (
+          <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
+            {role}
+          </p>
+          <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
+            {level}
+          </p>
+
+          {languages.map((langauge) => (
             <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
-              {language}
+              {langauge}
+            </p>
+          ))}
+          {tools.map((tool) => (
+            <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
+              {tool}
             </p>
           ))}
         </div>
