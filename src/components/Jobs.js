@@ -17,7 +17,11 @@ const Jobs = ({
   tools,
 }) => {
   return (
-    <div className="max-w-screen-lg rounded  m-auto  p-8 shadow bg-white mb-4">
+    <div
+      className={`max-w-screen-lg rounded  m-auto  p-8 shadow bg-white mb-4 ${
+        featured && "border-l-4 border-primary border-black"
+      }`}
+    >
       <div className="flex gap-x-4">
         <div className="flex gap-x-4 mr-auto items-center">
           <img src={logo} alt="" />
@@ -30,7 +34,7 @@ const Jobs = ({
                 </div>
               )}
               {featured && (
-                <div className="text-xs rounded-full bg-v-dark-cyan text-white px-3 py-2 uppercase">
+                <div className="text-xs rounded-full bg-v-dark-cyan text-white px-3 py-2 uppercase ">
                   featured
                 </div>
               )}
@@ -48,22 +52,14 @@ const Jobs = ({
           </div>
         </div>
         <div className="flex items-center gap-x-4">
-          <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
-            {role}
-          </p>
-          <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
-            {level}
-          </p>
+          <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">{role}</p>
+          <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">{level}</p>
 
           {languages.map((langauge) => (
-            <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
-              {langauge}
-            </p>
+            <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">{langauge}</p>
           ))}
           {tools.map((tool) => (
-            <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">
-              {tool}
-            </p>
+            <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">{tool}</p>
           ))}
         </div>
       </div>
