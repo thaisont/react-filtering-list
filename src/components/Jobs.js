@@ -18,14 +18,14 @@ const Jobs = ({
 }) => {
   return (
     <div
-      className={`max-w-screen-lg rounded  m-auto  p-8 shadow bg-white mb-4 ${
+      className={`max-w-screen-lg rounded  m-auto  p-8 shadow bg-white mb-4 my-12    ${
         featured && "border-l-4 border-primary border-black"
       }`}
     >
-      <div className="flex gap-x-4">
+      <div className="flex-col md:flex md:flex-row  gap-x-4">
+        <img className="-mt-16 w-20 h-20" src={logo} alt="" />
         <div className="flex gap-x-4 mr-auto items-center">
-          <img src={logo} alt="" />
-          <div className="text-sm flex flex-col">
+          <div className="text-sm flex flex-col flex-wrap">
             <div className="flex py-1 gap-x-4 items-center">
               <p className="text-primary font-bold">{company}</p>
               {newRole && (
@@ -51,7 +51,7 @@ const Jobs = ({
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-x-4">
+        <div className=" flex items-center gap-x-4">
           <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">{role}</p>
           <p className="p-1.5 text-xs text-primary bg-light-cyan font-bold">{level}</p>
 
